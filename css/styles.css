@@ -1,0 +1,237 @@
+
+
+/* === GOOGLE FONTS === */
+
+/* red-hat-display-regular - latin */
+@font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/red-hat-display-v4-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/red-hat-display-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/red-hat-display-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/red-hat-display-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/red-hat-display-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/red-hat-display-v4-latin-regular.svg#RedHatDisplay') format('svg'); /* Legacy iOS */
+  }
+  
+  /* red-hat-display-500 - latin */
+  @font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/red-hat-display-v4-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/red-hat-display-v4-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/red-hat-display-v4-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/red-hat-display-v4-latin-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/red-hat-display-v4-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/red-hat-display-v4-latin-500.svg#RedHatDisplay') format('svg'); /* Legacy iOS */
+  }
+  
+  /* red-hat-display-700 - latin */
+  @font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/red-hat-display-v4-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/red-hat-display-v4-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/red-hat-display-v4-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/red-hat-display-v4-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/red-hat-display-v4-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/red-hat-display-v4-latin-700.svg#RedHatDisplay') format('svg'); /* Legacy iOS */
+  }
+  
+  /* red-hat-display-900 - latin */
+  @font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/red-hat-display-v4-latin-900.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/red-hat-display-v4-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/red-hat-display-v4-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/red-hat-display-v4-latin-900.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/red-hat-display-v4-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/red-hat-display-v4-latin-900.svg#RedHatDisplay') format('svg'); /* Legacy iOS */
+  }
+  
+
+/* === GENERELLES === */
+
+html {
+     font-family: 'Red Hat Display', sans-serif;
+     font-size: 16px;
+     background: repeat-x url('../images/pattern-background-desktop.svg');
+     background-color: hsl(225, 100%, 94%);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+}
+
+
+
+/* === BUTTONS === */
+
+#btn-1 {
+     font-weight: bold;
+     color: #fff;
+     border: none;
+     border-radius: 10px; 
+     box-shadow: 0px 15px 30px 0px hsla(245, 75%, 52%, 0.5);
+     background-color: hsl(245, 75%, 52%);
+     padding: 1rem 0 1rem;
+     margin-bottom: 2rem;
+}
+
+#btn-1:active {
+     box-shadow: 0px 15px 30px 0px hsla(245, 30%, 52%, 0.5);
+     background-color: hsl(245, 30%, 52%);
+}
+
+#btn-1:hover {
+     cursor: pointer;
+}
+
+/* === STYLINGS === */
+
+
+.container {
+     width: 400px;
+     height: auto;
+     background-color: #fff;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+}
+
+
+
+.container > img {
+     border-radius: 20px 20px 0 0;
+}
+
+.summary {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     padding:  2.5rem 2.5rem 2.5rem;
+}
+
+
+
+.summary > h1 {
+     color: hsl(223, 47%, 23%);
+     font-weight: 900;
+     font-size: 24px;
+     margin-top: 0;
+     margin-bottom: 0;
+}
+
+.summary > p {
+     color: hsl(224, 23%, 55%);
+}
+
+#selected-plan-box {
+     background-color: hsl(225, 100%, 98%);
+     height: 100px;
+     width: auto;
+     border-radius: 10px;
+     display: flex;
+     align-items: center;
+     padding-left: 1.4rem;
+     padding-right: 1.4rem;
+     margin-bottom: 2rem;
+     position: relative;
+}
+
+#selected-plan-box > a {
+     position: absolute;
+     right: 1.4rem;
+     font-weight: bold;
+     font-size: 14px;
+}
+
+#selected-plan-box > a:active {
+     text-decoration: none;
+     color: hsl(245, 30%, 52%);
+}
+
+#selected-plan-box > span {
+    margin-left: 1.4rem;
+}
+
+#selected-plan-box > span > p:first-of-type {
+     font-weight: 900;
+     color: hsl(223, 47%, 23%);
+     margin-bottom: 0.1rem;
+ }
+
+#selected-plan-box > span > p:last-of-type {
+     font-weight: 500;
+     color: hsl(224, 23%, 55%);
+     margin-top: 0.1rem;
+ }
+
+#cancel-order {
+     width: 100px; /* fixed: link geht über ganze zeile sodass pointer auf ganzer Zeile angezeigt wird*/
+     margin-left: auto;
+     margin-right: auto;
+     font-weight: bold;
+     color: hsl(224, 23%, 55%);
+     text-decoration: none;
+}
+
+#cancel-order:active {
+     color: hsl(223, 47%, 23%);
+
+}
+
+
+
+ /* === MOBILE VERSION === */
+
+ @media (max-width: 375px) {
+     .container {
+          width: 320px;
+     }
+
+     .summary {
+          padding:  1.5rem 1.5rem 1.5rem;
+     }
+
+     .summary > h1 {
+          font-size: 20px;
+     }
+     
+     .summary > p {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.8;
+          margin-bottom: 1.2rem;
+     }
+
+     #selected-plan-box {
+          height: 80px;
+          padding-left: 1.2rem;
+          padding-right: 1.2rem;
+          margin-bottom: 1.5rem;
+          font-size: 14px;
+     }
+
+     #selected-plan-box > a {
+          font-size: 12px;
+     }
+
+     #cancel-order {
+          font-size: 14px;
+     }
+
+     #btn-1 {
+          margin-bottom: 1.5rem;
+     }
+}
